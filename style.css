@@ -80,7 +80,7 @@ section .title::after {
   background: var(--color1-bg);
   transform: translateX(-50%);
 }
-/* section .title::after {
+section .title::after {
   position: absolute;
   bottom: -8px;
   left: 50%;
@@ -89,7 +89,7 @@ section .title::after {
   padding: 0 5px;
   background: var(--color2-bg);
   transform: translateX(-50%);
-} */
+}
 
 /* navbar styling */
 .navbar {
@@ -173,7 +173,7 @@ section .title::after {
 
 /* home section styling */
 .home {
-  background: url("imgs/background1.jpg") no-repeat center;
+  background: url("imgs/background1.webp") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
@@ -186,7 +186,9 @@ section .title::after {
   /* padding-top: 27%;
   padding-left: 27%; */
 }
-
+.dot {
+  color: var(--color6-hover);
+}
 .home .max-width {
   width: 100%;
   display: flex;
@@ -269,11 +271,35 @@ section .title::after {
   background: var(--color6-hover);
 }
 
+/* skills section styling */
+.skills .skills-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skills .column.right {
+  width: 55%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skills .skill-icon img {
+  width: 70px;
+  height: 70px;
+  margin: 15px 20px;
+  object-fit: contain;
+}
+
 /* Project section styling */
 /* .projects-section .title::after {
   content: "";
   background-color: #f1f1f1; 
 } */
+
 .projects-section {
   text-align: center;
   padding: 0 2rem;
