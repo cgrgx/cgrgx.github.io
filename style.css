@@ -17,6 +17,7 @@
   text-decoration: none;
 }
 body {
+  font-family: "Poppins", sans-serif;
   background-color: var(--color4-bg);
 }
 html {
@@ -39,20 +40,18 @@ html {
 }
 
 /* all similar content styling codes */
-section {
-  padding: 100px 0;
+.about,
+.skills,
+.projects-section,
+.contact {
+  margin-top: 30px;
 }
 .max-width {
   max-width: 1300px;
   padding: 0 80px;
   margin: auto;
 }
-.about,
-.project,
-.contact,
-footer {
-  font-family: "Poppins", sans-serif;
-}
+
 .about .about-content,
 .projects-section .project-content,
 .contact .contact-content {
@@ -64,7 +63,7 @@ footer {
 section .title {
   position: relative;
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 500;
   margin-bottom: 60px;
   padding-bottom: 20px;
@@ -79,16 +78,6 @@ section .title::after {
   width: 180px;
   height: 3px;
   background: var(--color1-bg);
-  transform: translateX(-50%);
-}
-section .title::after {
-  position: absolute;
-  bottom: -8px;
-  left: 50%;
-  font-size: 20px;
-  color: var(--color5);
-  padding: 0 5px;
-  background: var(--color2-bg);
   transform: translateX(-50%);
 }
 
@@ -294,10 +283,6 @@ section .title::after {
 }
 
 /* Project section styling */
-/* .projects-section .title::after {
-  content: "";
-  background-color: #f1f1f1; 
-} */
 
 .projects-section {
   text-align: center;
@@ -313,16 +298,6 @@ section .title::after {
   max-width: 1280px;
   margin: 0 auto;
   margin-bottom: 2rem;
-}
-
-@media (max-width: 30.625em) {
-  .projects-section {
-    padding: 6rem 1rem;
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 .project {
@@ -358,18 +333,17 @@ section .title::after {
   padding: 2rem 0.5rem;
 }
 
-.btn {
-  display: inline-block;
-  padding: 1rem 2rem;
-  border-radius: 5px;
-  color: var(--color4-bg);
-  font-family: "Poppins", sans-serif;
-}
-
 .btn-show-all {
-  font-size: 1.3rem;
-  background: var(--color1-bg);
-  transition: background 0.3s ease-out;
+  font-family: "Poppins", sans-serif;
+  display: inline-block;
+  background: var(--color2-bg);
+  color: var(--color4-bg);
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
 }
 
 .btn-show-all:hover {
@@ -487,6 +461,7 @@ footer {
   padding: 15px 23px;
   color: var(--color-text);
   text-align: center;
+  margin-top: 10px;
 }
 footer span a {
   color: var(--color-text);
@@ -557,19 +532,17 @@ footer span a:hover {
   .about .about-content .left {
     display: flex;
     justify-content: center;
-    margin: 0 auto 60px;
+    border-radius: 6px;
   }
   .about .about-content .right {
     flex: 100%;
   }
   .services .serv-content .card {
     width: calc(50% - 10px);
-    margin-bottom: 20px;
   }
   .skills .skills-content .column,
   .contact .contact-content .column {
     width: 100%;
-    margin-bottom: 35px;
   }
 }
 @media (max-width: 690px) {
@@ -584,9 +557,6 @@ footer span a:hover {
   }
   .home .home-content a {
     font-size: 20px;
-  }
-  .services .serv-content .card {
-    width: 100%;
   }
 }
 
@@ -605,6 +575,9 @@ footer span a:hover {
   .about .about-content .right .text,
   .skills .skills-content .left .text {
     font-size: 19px;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr;
   }
   .contact .right form .fields {
     flex-direction: column;
