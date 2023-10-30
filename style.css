@@ -7,6 +7,7 @@
   --color3-bg: #3e5c76;
   --color4-bg: #e6e8e6;
   --color5: #333;
+  --color-text: #fff;
   --color6-hover: #023e8a;
 }
 * {
@@ -484,11 +485,11 @@ section .title::after {
 footer {
   background: var(--color2-bg);
   padding: 15px 23px;
-  color: var(--color4-bg);
+  color: var(--color-text);
   text-align: center;
 }
 footer span a {
-  color: rgb(43, 126, 173);
+  color: var(--color-text);
   text-decoration: none;
 }
 footer span a:hover {
