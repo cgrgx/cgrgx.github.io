@@ -173,8 +173,6 @@ section .title::after {
   color: var(--color4-bg);
   min-height: 500px;
   font-family: "Ubuntu", sans-serif;
-  /* padding-top: 27%;
-  padding-left: 27%; */
 }
 .dot {
   color: var(--color6-hover);
@@ -218,10 +216,6 @@ section .title::after {
 }
 
 /* about section styling */
-/* .about .title::after {
-  content: "";
-  background-color: var(--color4-bg);
-} */
 .about .about-content .left {
   width: 45%;
 }
@@ -361,10 +355,7 @@ section .title::after {
 }
 
 /* contact section styling */
-/* .contact .title::after {
-  content: "";
-  background-color: var(--color4-bg);
-} */
+
 .contact .contact-content .column {
   width: calc(50% - 30px);
 }
