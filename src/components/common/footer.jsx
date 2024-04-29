@@ -19,6 +19,9 @@ const Footer = () => {
 							<Link to="/projects">Projects</Link>
 						</li>
 						<li className="footer-nav-link-item">
+							<Link to="/articles">Articles</Link>
+						</li>
+						<li className="footer-nav-link-item">
 							<Link to="/contact">Contact</Link>
 						</li>
 					</ul>
@@ -26,7 +29,7 @@ const Footer = () => {
 
 				<div className="footer-credits">
 					<div className="footer-credits-text">
-						© 2024 Eddie O'Connor
+						© 2024 Chiran Gurung
 					</div>
 				</div>
 			</div>

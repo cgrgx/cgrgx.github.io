@@ -1,11 +1,10 @@
 {
 	"name": "personal-site",
 	"version": "1.0.0",
-	"description": "Personal professional site template built using Reactjs",
+	"description": "Personal professional site built using Reactjs",
 	"author": {
-		"name": "Eddie O'Connor",
-		"email": "eddie.oconnor3@gmail.com",
-		"url": "https://tbd.com"
+		"name": "Chiran Gurung",
+		"email": "chirangrg65@gmail.com"
 	},
 	"license": "MIT",
 	"dependencies": {
